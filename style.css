@@ -268,7 +268,7 @@ section{
   
   /* Style the active/current link*/
   .header a.active {
-    background-color: #DF8E0B;
+    background-color: #bfff00;
     color: white;
   }
   
