@@ -95,9 +95,9 @@ nav .search_box span:hover:after{
 }
 
 nav .bar{
-    position; relative;
+    position: relative;
     margin: auto;
-    display none;
+    display: none;
 
 }
 
