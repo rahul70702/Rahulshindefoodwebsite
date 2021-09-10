@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+   
+}
+
+nav{
+    display:flex;
+    width: 100%;
+    background:#f7a21b;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30;
+}
+
+nav .icons{
+    font-size: 35px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ol{
+    display:flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ol li{
+    margin: 0 2px;
+}
+nav ol li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+
+nav ol list-style: hover a{
+    background: #fff;
+    color: #4dffff;
+}
+
+nav .search_box{
+    display:flex;
+    margin: auto 0;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav .search_box input{
+    border: none;
+    outline: none;
+    background: #fff;
+    height: 100%;
+    padding: 0 10px;
+    font-size: 20px;
+    width: 350px;
+}
+
+nav .search_box span{
+    color: #4dffff;
+    font-size: 20px;
+    background: #ffff;
+    height: 100%;
+    padding: 8px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+nav .search_box span:hover{
+    color: rgb(150, 226, 27);
+}
+
+nav .search_box span::after{
+    height: 100%;
+    width: 0%;
+    content: '';
+    background: #ff501b;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+nav .search_box span:hover:after{
+    width: 100px;
+}
+
+nav .bar{
+    position; relative;
+    margin: auto;
+    display none;
+
+}
+
+nav .bar span{
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+}
+
+input[type="checkbox"]{
+    display:none;
+}
+@media screen and (max-width: 1250px){
+    nav{
+        display: inline-block;
+        padding:15px 30px;
+    }
+}
+
+nav .icon{
+    display: inline-block;
+    padding: 15px 30px;
+
+
+}
+
+nav .search_box{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+nav .search_box input{
+    width: 50%;
+}
+
+nav ol{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    height: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+}
+
+nav ol li{
+    text-align: center;
+    transition: all: 0.3s 0.1s all;
+
+}
+
+nav ol li a{
+    color: #000;
+    font-size: 28px;
+    padding: 25px;
+    display: block;
+}
+
+nav ol li:nth-child(1){
+    transform: translatex(-150px);
+}
+
+nav ol li:nth-child(2){
+    transform: translatex(-200x);
+}
+
+nav ol li:nth-child(3){
+    transform: translatex(-250px);
+}
+
+nav ol li:nth-child(4){
+    transform: translatex(-300px);
+}
+
+nav ol li:nth-child(5){
+    transform: translatex(-350px);
+}
+
+
+nav .bar{
+    display:block;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    cursor: pointer;
+
+}
+
+nav .bar #times{
+    display: none;
+}
+
+#check:checked ~ nav .bar #times{
+    display: block;
+}
+
+nav .bar #bars{
+    display: none;
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#check:checked ~ nav .bar #times{
+    display block;
+}
+#check:checked ~ nav ol{
+    visibility: visible;
+    height: 465px;
+}
+#CHECK:CHECKED ~ nav ol li;nth-child(1),
+#CHECK:CHECKED ~ nav ol li;nth-child(2),
+#CHECK:CHECKED ~ nav ol li;nth-child(3),
+#CHECK:CHECKED ~ nav ol li;nth-child(4),
+#CHECK:CHECKED ~ nav ol li;nth-child(5),{
+ transform: translatex(0);
+ opacity: 1;
+}
+section{
+    background: url(img.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+  
+
+
+
+
+    
