@@ -269,7 +269,7 @@ section{
   /* Style the active/current link*/
   .header a.active {
     background-color: #bfff00;
-    color: white;
+    color: black;
   }
   
   /* Float the link section to the right */
